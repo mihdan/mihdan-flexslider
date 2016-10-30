@@ -1,6 +1,6 @@
 # mihdan-flexslider
 
-![mihdan-flexslider](mihdan-swiper.jpg)
+![mihdan-flexslider](mihdan-flexslider.jpg)
 
 WordPress плагин, преобразующий стандартную галерею в элегантный слайдер на основе FlexSlider
 
