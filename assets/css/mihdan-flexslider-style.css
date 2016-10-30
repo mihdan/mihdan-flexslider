@@ -1,3 +1,6 @@
+.flexslider-container {
+    position: relative;
+}
 .gallery img {
     width: 638px;
     height: 480px;
