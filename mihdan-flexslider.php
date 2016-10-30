@@ -85,9 +85,9 @@ function mihdan_flexslider_enqueue_scripts() {
 	//}
 
 	//if ( is_single() ) {
-		wp_enqueue_style( 'swiper', plugins_url( 'assets/css/swiper.min.css', __FILE__ ) );
-		wp_enqueue_style( 'mihdan-swiper', plugins_url( 'assets/css/mihdan-swiper-style.css', __FILE__ ) );
-		wp_enqueue_script( 'swiper', plugins_url( 'assets/js/swiper.jquery.min.js', __FILE__ ), array( 'jquery' ), null, true );
+		wp_enqueue_style( 'flexslider', plugins_url( 'assets/css/flexslider.css', __FILE__ ) );
+		wp_enqueue_style( 'mihdan-flexslider', plugins_url( 'assets/css/mihdan-flexslider-style.css', __FILE__ ) );
+		wp_enqueue_script( 'flexslider', plugins_url( 'assets/js/jquery.flexslider.js', __FILE__ ), array( 'jquery' ), null, true );
 		
 		$js = <<<JS
 			jQuery( function( $ ) {			    
@@ -118,7 +118,7 @@ function mihdan_flexslider_enqueue_scripts() {
 			});
 JS;
 		
-		wp_add_inline_script( 'swiper', $js );
+		wp_add_inline_script( 'flexslider', $js );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'mihdan_flexslider_enqueue_scripts' );
